@@ -13,12 +13,11 @@
 
 }
 /*
-	Assignment:Fianl_Portfolio
-	Author: Prafulla Kalusinh Garasia
-	Student No.: 0797964
-    Date:2022-04-20
+	Project: Appy.yo
+   	Author: Prafulla Kalusinh Garasia 
+   	Date: 2023-02-19
 	Filename: external_Project.css
-	Copyright: 2022-All rights reserved   
+	Copyright: 2023-All rights reserved   
 */
 
 /*
@@ -70,15 +69,13 @@ html
 	margin: 0px auto;
 }
 
-body 
-{
+body {
 	padding-left: 4.50%;
 	padding-right: 4.50%;
 	margin: 0px auto auto auto;
-	background-image: url(../img/project.jpeg);
-	background-color: #9ea494;
+	background-color: #2F303A;
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
 }
 
 /* 2.Main Styles */
@@ -90,17 +87,16 @@ main
 
 /* 3.Heading Styles */
 
-h1
-{	
+h1 {
 	text-align: center;
 	padding-top: 5%;
 	font-size: 4em;
 	margin: 10px 0 10px;
-	text-transform: uppercase;
-	font-family: 'Oswald',Verdana, Geneva, Tahoma, sans-serif;
 	text-shadow: 2px 2px 8px #fffffff5;
-	text-decoration-color: rgb(255, 255, 255); 
-    color:rgb(255, 222, 4);
+	text-decoration-color: rgb(255, 255, 255);
+	font-family: 'Oswald',Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: uppercase;
+	color: whitesmoke;
 }
 h2
 {
@@ -137,6 +133,19 @@ nav ul
 {
 	list-style-type: none;
 }
+nav button 
+{
+	float: right;
+	color: black;
+	background-color: whitesmoke;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'fira_sans_extra_condensedRg',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	border-radius: 25px;
+}
   
 /* 5.Section Styles */
 
@@ -159,7 +168,7 @@ p
 
 /* 7.Image Styles */
 
-img
+/*img
 {	
     margin: 8%;
     padding-top: 4%;
@@ -170,7 +179,7 @@ img
 img:hover
 {
 	transform: scale(1.5);
-}
+}*/
 
 /* 8.Figure Styles */
 
@@ -207,6 +216,17 @@ figure:hover figcaption
 	opacity: 1;	
 }
 
+/* 8.Aside Styles */
+
+aside img {
+	overflow: hidden;
+	position: absolute;
+	top: 6px;
+	left: 65px;
+	float: right;
+	width: 150px;
+	/*filter: drop-shadow(8px 8px 10px gray);*/
+}
 
 /* 9.Footer Styles */
 
@@ -215,13 +235,17 @@ footer
 	border-top: 2px outset rgb(255, 255, 255);
 }
 
-footer p 
-{	
-	text-align: center;
+footer p a {
+	text-align: left;
 	clear: both;
-	font-size: 1.7em;
 	font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
-	color:hsl(0, 0%, 100%);
+	color: hsl(0, 0%, 100%);
+}
+
+footer p {
+	margin: 1% 1%;
+	line-height: 1em;
+	font-size: 1.5em;
 }
 /*10.For Social Media logo*/
 .fa 
