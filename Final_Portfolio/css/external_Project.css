@@ -149,12 +149,17 @@ nav button
   
 /* 5.Section Styles */
 
-section img
-{		
+section img {
 	display: block;
 	box-sizing: border-box;
 	width: 500px;
-    height: 300px;
+	height: 300px;
+	margin: 8%;
+	filter: drop-shadow(8px 8px 10px gray);
+	transition: 0.8s;
+}
+section img:hover {
+	transform: scale(1.5);
 }
 
 /* 6.Paragraph Styles*/
@@ -271,26 +276,8 @@ footer p {
 	background: #000000;
 	color: white;
 }
-  
-.fa-twitter 
-{
-	background: #000000;
-	color: white;
-}
-  
-.fa-google 
-{
-	background: #000000;
-	color: white;
-}
-  
+    
 .fa-linkedin 
-{
-	background: #000000;
-	color: white;
-}
-  
-.fa-youtube 
 {
 	background: #000000;
 	color: white;
@@ -301,7 +288,7 @@ footer p {
 	background: #000000;
 	color: white;
 }
-/*11. For mobile phones: */
+/*11. For mobile phones: (incomplete)*/
 @media only screen and (max-width: 667px) 
 {
 	
