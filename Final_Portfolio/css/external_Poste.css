@@ -15,27 +15,22 @@
 /*
 	Project: Appy.yo
    	Author: Prafulla Kalusinh Garasia 
-   	Date: 2023-02-19
-	Filename: external_Project.css
+   	Date: 2023-02-25
+	Filename: external_Poste.css
 	Copyright: 2023-All rights reserved   
 */
 
 /*
 Color Guide:
-1.#9ea494f
-2.#f2f2f2
-3.#ddd
-4.black
-5.#fffffff5
-6.white
-7.rgb(3, 3, 3)
-8.rgb(255, 255, 255)
-9.rgba(255, 213, 2, 0.762)
-10.hsl(0, 0%, 100%)
-11.#000000
-12.rgb(255, 222, 4)
-13.rgb(247, 234, 176)
-14.rgb(255, 213, 2)
+
+1.#2F303A
+2.rgb(255, 255, 255)
+3.whitesmoke
+4.#f2f2f2
+5.#ddd
+6.Black
+7.hsl(0, 0%, 100%)
+8.White
 */
 
 /*
@@ -50,11 +45,11 @@ Typography Guide:
 Table of Contents:
 
 1.HTML & Body Styles
-2.Main Styles 
-3.Heading Styles
+2.Main Styles
+3.Heading Styles 
 4.Navigation Styles
-5.Image Styles
-6.Figure Styles 
+5.Aside Styles
+6.Article Styles 
 7.Footer Styles
 8.For Social Media logo
 9.For mobile phones
@@ -68,6 +63,7 @@ html
 }
 
 body {
+	width: 90%;
 	padding-left: 4.50%;
 	padding-right: 4.50%;
 	margin: 0px auto auto auto;
@@ -96,12 +92,7 @@ h1 {
 	text-transform: uppercase;
 	color: whitesmoke;
 }
-h2
-{
-	font-weight: bold;
-	font-size: 1.2em;
-	font-family: 'Oswald',Verdana, Geneva, Tahoma, sans-serif;
-}
+
 /* 4.Navigation Styles */
 
 nav
@@ -127,10 +118,6 @@ nav a:hover
 	color: black;
 	text-decoration:underline;
 }
-nav ul
-{
-	list-style-type: none;
-}
 nav button 
 {
 	float: right;
@@ -155,83 +142,7 @@ nav button
 	margin: 4px 2px;
 	cursor: pointer;
   }
-
-/* 6.Image Styles */
-
-.image-container {
-	width: 100%;
-	text-align: center;
-	display: block;
-	box-sizing: border-box;
-	filter: drop-shadow(8px 8px 10px gray);
-	transition: 0.8s;
-  }
-  
-  .image-container figure {
-	display: inline-block;
-	width: 30%;
-	margin: 10px;
-	text-align: center;
-  }
-  
-  .image-container figure img {
-	width: 100%;
-  }
-  
-  
-.image-container figure:last-of-type {
-	display: block;
-	margin: 20px auto;
-  }
-
-
-/* 7.Figure Styles */
-
-figure
-{
-	position: relative;
-	margin: 10px;
-}
-figure a 
-{
-	display: inline-block;
-	padding: 10px;
-	color: white;
-	text-decoration: none;
-	filter: drop-shadow(8px 8px 10px gray);
-}
-  
-  figure a:hover {
-	background-color: rgba(0, 0, 0, 0.226);
-  }
-  
-  figure img {
-	max-width: 100%;
-	height: auto;
-  }
-/* figcaption
-{
-	visibility: hidden;
-  	background-color: rgba(255, 213, 2, 0.762);
-  	color: rgb(3, 3, 3);
-  	text-align: center;
-  	padding: 5px 0;
-	top: 10%;
-	left: 30%;
-  	position: absolute;
-  	z-index: 1;
-	font-size: 1em;
-} */
-figcaption {
-	top: 0;
-	left: 60%;
-	color: white;
-	font-size: 18px;
-	font-weight: bold;
-	margin-top: 10px;
-  }  
-  
-/* 8.Aside Styles */
+/* 5.Aside Styles */
 
 aside img {
 	overflow: hidden;
@@ -243,14 +154,39 @@ aside img {
 	/*filter: drop-shadow(8px 8px 10px gray);*/
 }
 
-div p{
-	font-size: 1.2em;
+/* 6.Article Styles */
+
+article img {
+	width: 500px;
+	margin-left: 30%;
+	margin-bottom:5%;
+	filter: drop-shadow(8px 8px 10px gray);
+	border-radius: 25px;
+}
+article button {
+	float: none;
+	color: black;
+	background-color: whitesmoke;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: capitalize;
 	font-family: 'fira_sans_extra_condensedRg',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	color: #ddd;
-	margin-top: 2em;
+	border-radius: 25px;
+	margin-left: 40%;
+	margin-bottom: 5%;
 }
 
-/* 9.Footer Styles */
+article p {
+	margin: 2.5% 1%;
+	font-size: 1.5em;
+	color: hsl(0, 0%, 100%);
+	font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
+	font-style: normal;
+	line-height: 1em;
+}
+/* 7.Footer Styles */
 
 footer 
 {	
@@ -258,18 +194,20 @@ footer
 }
 
 footer p a {
+	
 	text-align: left;
 	clear: both;
 	font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
 	color: hsl(0, 0%, 100%);
+	
 }
-
 footer p {
 	margin: 1% 1%;
 	line-height: 1em;
 	font-size: 1.5em;
 }
-/*10.For Social Media logo*/
+
+/*8.For Social Media logo*/
 .fa 
 {
 	
@@ -293,7 +231,7 @@ footer p {
 	background: #000000;
 	color: white;
 }
-    
+   
 .fa-linkedin 
 {
 	background: #000000;
@@ -305,58 +243,39 @@ footer p {
 	background: #000000;
 	color: white;
 }
-/*11. For mobile phones: (incomplete)*/
-@media only screen and (max-width: 667px) 
+
+/* 9.For mobile phones: (it's not done') */ 
+/*@media only screen and (max-width: 667px) 
 {
 	
 	main 
 	{
 	  	width: 100%;
 	}
-	
+	aside img
+	{
+		width:50px;
+	}
+	aside p
+	{
+		font-size: 1.5em;
+	}
+
 	nav a
 	{
   		padding: 8px 10px;
   		font-size: 15px;
-	}
-	h1
+	}*/
+	/*img
 	{	
-		font-size: 3.7em; 
-	}
-	p
-	{	
-		font-size: 1.2em;
-	}
-
-	section img
-	{	
-		width:340px;
-		display: block;
-  		margin-left: auto;
-  		margin-right: auto;
-	}
-	img:hover
+		width: 220px;
+		padding-top: 2%;
+		float: none;
+		margin-left: 15%;
+	}*/
+	/*section pre code
 	{
-		transform: none;
-	}
-	
-	figure
-	{
-		padding-bottom: 2%;
-		padding-left: .1%;
-	}
-	figcaption
-	{
-		top:15%;
-		left: 10%;
-		margin-right: 10%;
-		font-size: .8em;
-	}
-	
-	figure:hover figcaption
-	{	
-		padding-bottom: 5%;
-		padding-right: 5%;
+		font-size: 1.3em;
 	}
 	footer p 
 	{	
@@ -368,4 +287,4 @@ footer p {
 		font-size: 10px;
 		width: 10px;
   	}
-}
+}*/
