@@ -1,8 +1,7 @@
 <!-- 
-	 Assignment: Fianl_Portfolio 
-   	 Author: Prafulla Kalusinh Garasia 
-	 Student Number: 0797964 
-   	 Date: 2022-04-20
+	 Project: Appy.yo
+     Author: Prafulla Kalusinh Garasia
+     Date: 2023-02-25
 	 Filename: Contact.html -->
 
      <!DOCTYPE html>
@@ -22,45 +21,63 @@
          </head>
          <body>
              <main>
+                <aside>
+                    <img src="img/Logo.jpg" alt="Appy.yo_Logo">
+                </aside>
+        
                 <header>
                     <nav>
-                       <ul>
-                            <li><a href="Contact.html">contact</a></li>
-                            <li><a href="Project.html">projects</a></li>
-                            <li><a href="About.html">about</a></li>
+                        <ul>
+                            <li><button class="btn"><a href="Contact.html">Get In Touch</a></button></li>
+                            <li><a href="Professional Services.html">Services</a></li>
+                            <li><a href="Project.html">Projects</a></li>
+                            <li><a href="Project.html">Innovation Lab</a></li>
+                            <li><a href="About.html">About Us</a></li>
                             <li><a href="Index.html">Home</a></li>
-                       </ul>
+        
+                        </ul>
                     </nav>
-                 </header>
-                <h1>Contact Me</h1>
-                 <form action="#" method="get">
-                    <fieldset>
+                </header>
+                <div class="container">
+                
+                 <form action="#" method="post">
                         <label for="name">Name:*</label>
                         <input autofocus type="text" placeholder="Please enter your First Name " id="name" name="name" required/>
         
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address"></textarea>
+
                         <label for="email">Email Address:*</label>
                         <input type="email" placeholder="Please enter your Email " id="email" name="email" required/>
         
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
                         <label for="subject">Subject:</label>
                         <input type="text" id="subject" name="subject"/>
         
                         <label for="msg">Message:</label>
-                        <textarea id="msg" name="msg" rows="12" cols="108">Type your Message Here...</textarea>
-            
-                    </fieldset>
-        
-                    <input type="submit" name="submit" value="Send Message"/>
+                        <textarea id="msg" name="msg" rows="5">Type your Message Here...</textarea>
+                        <button type="submit">Submit</button>
                 </form>
+            </div>
+                <div class="contact-info">
+                    <h1>Get in Touch</h1>
+                    <ul>
+                      <li>Email: <a href="mailto:info@appyyo.com">info@appyyo.com</a></li>
+                      <li>Phone: XXX-XXX-XXXX</li>
+                      <li>Address: Enter your address here</li>
+                    </ul>
+                  </div>
+                
              </main>
              
              <footer>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-youtube"></a>
+
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-linkedin"></a>
-                <p>&copy;2022 All Rights reserved Prafulla Garasia</p>    
-         </footer>
+                <p><a href="mailto:info@appyyo.com?subject = Feedback&body = Message">info@appyyo.com</a></p>
+            </footer>
          </body>
      </html>   
