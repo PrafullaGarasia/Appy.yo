@@ -131,7 +131,7 @@ nav button
 	font-family: 'fira_sans_extra_condensedRg',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	border-radius: 25px;
 }
-.btn {
+.btn .button2{
 	border: none;
 	color: black;
 	padding: 10px 20px;
