@@ -421,14 +421,14 @@ footer p {
 	}
 	aside p
 	{
-		font-size: 1.5em;
+		font-size: 1px;
 	}
 
-	nav a
+	/* nav a
 	{
   		padding: 8px 10px;
   		font-size: 15px;
-	}
+	} */
 	img
 	{	
 		width: 220px;
@@ -448,3 +448,34 @@ footer p {
 		width: 10px;
   	}
 }
+#menu-button {
+	display: none; /* Hide the button on large screens */
+  }
+  
+  @media only screen and (max-width: 600px) { /* Show the button on small screens */
+	#menu-button {
+	  display: block;
+	  font-size: 1.5em;
+	  background: none;
+	  border: none;
+	  cursor: pointer;
+	}
+	#nav-links {
+	  display: none; /* Hide the links by default */
+	  position: absolute;
+	  top: 50px;
+	  left: 0;
+	  width: 100%;
+	  background-color: #f9f9f9;
+	  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	  padding: 10px;
+	}
+	#nav-links ul {
+	  margin: 0;
+	  padding: 0;
+	}
+	#nav-links li {
+	  margin: 10px 0;
+	}
+  }
+  
