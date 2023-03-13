@@ -400,7 +400,11 @@ dl{
     margin-top: 150%;
 
 }
-                
+    .logo {
+        width: 100px;
+        height: auto;
+        float: left;
+    }          
             }
 
 
