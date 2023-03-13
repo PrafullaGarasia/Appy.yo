@@ -69,7 +69,15 @@ h2 {
 	font-weight: bold;
 	margin-top: 10px;
 	font-family: monospace;
-}  
+}
+h3 {
+	text-decoration-color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	color: whitesmoke;
+	font-family: monospace;
+	font-size: 18px;
+	text-decoration:underline;
+}
 /*----------------------------------------------------Navigation Styles------------------------------------------ */
 
 header {
@@ -174,15 +182,6 @@ figure a
   }
 																			
 
-
-/*----------------------------------------------------------------Aside Styles------------------------------------------------------ */
-
-div p {
-	font-size: 1.2em;
-	font-family: monospace;
-	color: #ddd;
-	margin-top: 2em;
-}
 /*---------------------------------------------------------Div Styles------------------------------------------------------ */
 
 div ul {
@@ -217,6 +216,12 @@ div button {
 	color: #000000;
   }
 
+div p {
+	font-size: 1.2em;
+	font-family: monospace;
+	color: #ddd;
+	margin-top: 2em;
+}
 /*-----------------------------------------------------------------Article Styles-------------------------------------------------------- */
 
 article img {
@@ -250,6 +255,44 @@ article p {
 	line-height: 1em;
 	text-align:justify;
 }
+
+/*-------------------------------------------------------------------Aside Styles---------------------------------------------------------*/
+
+aside {
+	width: 40%;
+	margin-top: 20px;
+	margin-left:2%;
+	float:right;
+	font-family:monospace;
+
+}
+	aside ul li {
+		font-family: monospace;
+		font-size:1em;
+		color:whitesmoke;
+	}
+	aside h3 {
+		margin-left: 2%;
+	}
+	aside ul {
+		border: 5px solid White;
+		border-radius: 10px;
+
+	}
+
+	aside p {
+	margin: 2.5% 1%;
+	font-size: 1.5em;
+	color: hsl(0, 0%, 100%);
+	font-family: monospace;
+	font-style: normal;
+	line-height: 1em;
+	text-align:justify;
+	}
+
+
+
+
 /*----------------------------------------------------------Form Input & Label Styles---------------------------------------------------- */
 
 form {
@@ -573,7 +616,7 @@ footer p
 		font-size: 1em;
 		text-align: center;
 	}
-
+	
 	article img 
 	{
 		width: 220px;
@@ -581,6 +624,24 @@ footer p
 		float: none;
 		margin-left: 18%;
 	}
+
+	aside {
+		width: 80%;
+		margin-top: 20px;
+		float: none;
+		margin-left:8%;
+
+	}
+		aside p {
+			font-size: 1em;
+			text-align: center;
+		}
+
+		aside ul li {
+			font-family: monospace;
+			font-size: 1em;
+			color: whitesmoke;
+		}
 
 
 	button[type=submit] {
