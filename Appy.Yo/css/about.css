@@ -187,22 +187,22 @@ footer p {
 }
 
   #defaultOpen{
-      background-image: url(img/about.png);
+      background-image: url(../img/about.png);
   }
   #exp{
-      background-image: url(img/exprience1.png);
+      background-image: url(../img/exprience1.png);
   }
   #pro{
-      background-image: url(img/pro.png);
+      background-image: url(../img/pro.png);
   }
   #coll{
-      background-image: url(img/colla.png);
+      background-image: url(../img/colla.png);
   }
   #time{
-      background-image: url(img/time.png);
+      background-image: url(../img/time.png);
   }
   #organize{
-      background-image: url(img/organize1.png);
+      background-image: url(../img/organize1.png);
   }
 p{
     letter-spacing: normal;
