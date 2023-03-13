@@ -1,0 +1,325 @@
+* {box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: monospace;
+  background-color: #2F303A;
+  text-decoration: none;
+}
+ 
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+ text-decoration: none;
+  padding-top: 80px;
+}
+img{
+  border-radius: 60%;
+ 
+}
+
+.bottom-left span, .top-left span{
+  transition: .5s linear
+}
+.bottom-left:hover span:nth-child(1), .top-left:hover span:nth-child(1){
+  margin-right: 5px
+}
+.bottom-left:hover span:nth-child(1):after,.top-left:hover span:nth-child(1):after{
+  content: "";
+}
+.bottom-left:hover span:nth-child(2),.top-left:hover span:nth-child(2){
+  margin-left: 30px
+}
+.bottom-left:hover span, .top-left:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+.top-right span, .bottom-right span{
+  transition: .5s linear
+}
+.top-right:hover span:nth-child(1), .bottom-right:hover span:nth-child(1){
+  margin-right: 5px
+}
+.top-right:hover span:nth-child(1):after,  .bottom-right:hover span:nth-child(1):after{
+  content: "";
+}
+.top-right:hover span:nth-child(2), .bottom-right:hover span:nth-child(2){
+  margin-left: 30px
+}
+.top-right:hover span, .bottom-right:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+.centered span{
+  transition: .5s linear
+}
+.centered:hover span:nth-child(1){
+  margin-right: 5px
+}
+.centered:hover span:nth-child(1):after{
+  content: "";
+}
+.centered:hover span:nth-child(2){
+  margin-left: 30px
+}
+.centered:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 230px;
+  left: 250px;
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.top-left {
+  position: absolute;
+  top: 260px;
+  left: 180px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top-right {
+  position: absolute;
+  top: 100px;
+  right: 600px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 228px;
+  right: 400px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.centered {
+  position: absolute;
+  bottom: 408px;
+  right: 240px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.img{
+ 
+  width: 50%;
+  display: flex;
+  float:inline;
+  margin-left: 320px;
+
+  
+  
+}
+.img,.container { animation: fadeIn 5s; 
+}
+
+
+/*---------------------------button-----------------------------*/
+.btn{
+    
+    
+  }
+.btn{
+    width: fit-content;
+    height: fit-content;
+    display:block;
+    padding: 0.3em 2em;
+    margin: 1em 1em 1em 90em;       
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight:300;
+    color:black;
+    background-color: whitesmoke;
+    text-align:center;
+    transition: all 0.5s;       
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    
+      }
+   
+    
+.btn:hover{
+    background-color:rgb(145, 142, 142);
+    color:whitesmoke;
+    text-decoration: underline;
+
+    }
+
+/* ------------Footer--------*/
+footer 
+{	
+	border-top: 1px solid whitesmoke;
+    
+}
+
+footer p a {
+	
+	text-align: left;
+	clear: both;
+	font-family:monospace;
+	color: hsl(0, 0%, 100%);
+	padding-bottom: 0;
+}
+footer p {
+	margin: 1% 1%;
+	line-height: 0.5em;
+	font-size: 1em;
+}
+/*8.For Social Media logo*/
+.fa 
+{
+	
+	padding: 20px;
+	font-size: 10px;
+	width: 15px;
+	text-align: center;
+	text-decoration: none;
+	
+    margin-right: 10px;
+	border-radius: 50%;
+	float: right;
+}
+
+.fa:hover 
+{
+	opacity: 0.7;
+}
+  
+.fa-facebook 
+{
+	background: #000000;
+	color: white;
+}
+   
+.fa-linkedin 
+{
+	background: #000000;
+	color: white;
+}
+  
+.fa-instagram 
+{
+	background: #000000;
+	color: white;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }}
+
+
+
+
+@media (max-width: 640px){
+
+ *{width: 100%;
+  box-sizing: border-box;}
+
+.btn{
+ margin-left: 60%;
+  width: 40%;
+  max-height: min-content;
+}
+
+ .bottom-left{
+    font-size: 14px;
+     display: inline-block;
+     top: 300px;
+     left: -200px;
+     letter-spacing: 0;
+      text-decoration: none;
+    }
+
+ .bottom-right{
+    font-size: 14px;
+     bottom: 140px;
+     right: -150px;
+     letter-spacing: 0;
+     text-decoration: none;
+    }
+
+ .centered{
+    font-size: 14px;
+     display: inline-block;
+    bottom: 245px;
+     right: -180px;
+     letter-spacing: 0;
+     text-decoration: none;
+    }
+
+ .top-left{
+    font-size: 14px;
+    display: inline-block;
+     top: 190px;
+     left: -170px;
+     letter-spacing: 0;
+     text-decoration: none;
+    }
+
+ .top-right{
+    font-size: 14px;
+    display: inline-block;
+    top: 120px;
+    right: 0px;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+ .container{ 
+    font-size: 14px;
+     letter-spacing: 0;
+     text-decoration: none;
+    }
+
+.img{width: 90%;
+    display: block;
+  margin: 10px;
+  
+  }
+  footer{
+    margin-top: 25%;
+    padding: -2% -2% -2%;
+  }
+  
+}
